@@ -14,3 +14,6 @@ update `item_template` set maxcount = 0 where maxcount > 0 and id not in(6948,);
 
 -- Not limit supplyment of Ice Threaded Arrow.
 update `npc_vendor` set maxcount=0, incrtime=0 where entry=13217 and item in (19316, 19317);
+
+-- Vultros Drops
+insert into `reference_loot_template` values(65004, 5971, 75, 1, 1, 1, 0, 'Feathered Cape')
